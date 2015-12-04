@@ -1,0 +1,459 @@
+/*GLOBAL STYLES*/
+
+/*
+===================================
+GLOBAL STYLES FOR NON-MOBILE SITE
+===================================
+*/
+/** {color:#FF7900;}BE CAREFUL USING THIS GLOBAL SELECTOR. IT'S DANGEROUS!*/
+
+
+html,body {
+    height:100%;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    background-color:#FFFFFF;
+    font-family:'Lucida Sans', Verdana, sans-serif;
+    font-size:16px;
+    font-weight:500;
+    color:#000000;
+}
+
+h1, h2, h3{
+    margin:0px;
+    padding:0px;
+    color:#FFCC00; /*THIS IS LIME GREEN*/
+}
+
+h1{
+    font-size:2em;
+}
+
+p{
+    margin:15px 0px;
+    line-height:15px;
+}
+
+b, strong{
+    color:#FFCC00;
+}
+
+a{
+    color:#FFCC00;
+    text-decoration:none;
+}
+
+figure{
+    margin:0px;
+    padding:0px;
+}
+
+hr {
+    margin:25px;
+}
+/*HEADER STYLES*/
+
+header{
+    background-color:#F1F1F1;
+    /*height:150px;*/
+}
+
+#header{
+    padding:15px 0px;
+    position:relative
+}
+
+#logo {
+    padding:15px;
+    color:#FF7900;
+}
+
+#logo:hover{
+    color:#FF0000;
+    text-decoration:none;
+}
+/*NAVIGATION STYLES*/
+#menu {
+    position:absolute;
+    top:40px;
+    right:5%;
+}
+
+/*#menu ul {*/
+/*    display:inline;*/
+/*    background-color:none;*/
+/*}*/
+
+#menu li {
+    display:inline;
+    margin:0px 10px;
+    font-weight:600;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+#menu li a:hover{
+    color:#FF0000;
+}
+
+#menu li:after{
+    content:"|";
+    padding:16px 20px;
+    color:rgb(141,198,63);
+}
+
+.currentPage a{
+    color:#FF0000;
+}
+
+/*BANNER STYLES*/
+
+#bannerHome{
+    border-top:3px solid #FFCC00;
+    padding:80px 0px;
+    background:url(../images/san-francisco.jpg) no-repeat top center #CC0000;
+    background-size:cover;
+    overflow:hidden;
+}
+
+#bannerAbout{
+    border-top:3px solid #FFCC00;
+    padding:90px 0px;
+    background:url(../images/banner-about.jpg) no-repeat center center #CC0000;
+    background-size:cover;
+    overflow:hidden;
+}
+
+#bannerContact{
+     border-top:3px solid #FFCC00;
+    padding:90px 0px;
+    background:url(../images/banner-contact.jpg) no-repeat center center #CC0000;
+    background-size:cover;
+    overflow:hidden;
+}
+
+.bannerTitle{
+    text-align:center;
+    color:#FFFFFF;
+    font-size:4em;
+    text-shadow:6px 6px 6px #000000;
+}
+
+
+/*MAIN BODY SECTION*/
+
+.mainWidth{
+    width:1200px;
+    margin:0px auto /*THIS IS HOW YOU CENTER ITEMS IN CSS*/
+}
+
+#main {
+    padding-bottom:;
+}
+
+/*COLUMN STYLES*/
+
+.columnA, .columnB, .columnC {
+    width:384px;
+}
+
+.columnA,.columnB{
+    float:left;
+    margin-right:24px;
+}
+
+.columnC{
+   float:right;
+}
+
+.columnA h2, .columnB h2, .columnC h2{
+    color:#FFCC00;
+    font-size:2.2em;
+    font-weight:900;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+/*likeImage {/*TEMPORARY UNTIL WE HAVE AN IMAGE IN ITS PLACE
+    width:384px;
+    height:225px;
+    background-color:#CC0000;
+}*/
+
+.likeImage span {
+    display:block;
+     background-color:#CC0000;
+    font-size:2em;
+    text-align:center;
+    font-weight:700;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding:18px 0px;
+}
+
+.columnA p, .columnB p, .columnC p {
+    text-align:justify;
+    padding:0px;
+}
+
+@media screen and (max-width:1024px) {
+    .mainwidth{
+        width:100%;
+        margin:0px auto;
+        padding:5px;
+    }
+    
+    .columnA, .columnB, .columnC{
+        width:100%;
+        margin:1% auto;
+        float:none;
+        padding-bottom:50px;
+    }
+    
+    .columnA h2, .columnB h2, .columnC h2{
+        font-size:6em;
+        font-weight:900;
+    }
+    
+    .likeimage span {
+        font-size:3em;
+    }
+} 
+
+/*BUTTON STYLES*/
+.columnButton, button{
+    text-decoration:none;
+    background-color:#CC0000;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -o-border-radius:6px;
+    border-radius:20px 20px;
+    border:4px solid;
+    padding:10px 26px;
+    float:left;
+}
+
+button{
+    text-decoration:none;
+    background-color:#CC0000;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -o-border-radius:6px;
+    border-radius:20px 20px;
+    border:4px solid;
+    padding:10px 26px;
+}
+
+.columnButton a{
+    text-decoration:none;
+}
+
+a.columnButton:hover{
+    text-decoration:none;
+    background-color:#FF0000;
+    /*border-color:#FFCC00;*/
+    border-radius:20px 20px;
+    border:4px solid;
+    padding:10px 26px;
+    /*cursor:url(../images/trollface-transparrent.png), auto;*/
+}
+
+button:hover{
+    text-decoration:none;
+    background-color:#FF0000;
+    /*border-color:#FFCC00;*/
+    border-radius:20px 20px;
+    border:4px solid;
+    padding:10px 26px;
+}
+
+#bioButton{
+    margin:0px auto;
+    width:200px;
+    margin-top:30px;
+}
+
+    /*About Me Styles*/
+.alignLeft{
+    float:left;
+    width:384px;
+    margin-right:24px;
+}
+
+
+/*FOOTER STYLES*/
+
+footer {
+    clear:both;
+    margin-top:26px;
+}
+
+footer p{
+    text-align:center;
+    font-size:18px;
+}
+
+.copyright {
+    overflow:hidden;
+    padding:30px 0px;
+    border-top: 3px dotted #FFCC00;
+    background-color:#CCCCCC;
+    display:block;
+}
+
+.social{
+    text-align:center;
+}
+
+.copyright p{
+    margin:center;
+    text-align:center;
+    font-size:1em;
+}
+
+.copyright p a{
+    color:#FF0000;
+    text-decoration:none;
+}
+
+.copyright p a:hover{
+    color:#FFCC00;
+    text-decoration:underline;
+}
+/*==========================TABLE STYLES==========================*/
+
+#myData{
+    width:1198px;
+    margin:0px auto;
+}
+
+#myHeader > tr > th{
+    color:#FFFFFF;
+    background-color:#FFCC00;
+    text-shadow:1px 1px 2px #000000;
+    padding:10px 0px 10px 0px;
+    font-size:1.3em;
+}
+
+tr:hover{
+    background-color:#FFCC00;
+}
+
+/*tr th{*/
+/*    background-color:#FF0000;*/
+/*    color:#FFFFFF;
+}*/
+
+table{
+    border-radius:6px;
+    background-color:#FFE066;
+    margin:20px 20px 20px 20px;
+}
+
+.lightCell{
+    background-color:#FFFFFF;
+}
+
+tfoot{
+    color:#000000;
+    border-radius:6px;
+    padding:10px 0px 10px 0px;
+}
+
+tfoot td{
+    text-align:center;
+    font-weight:700;
+    color:#000000;
+    border-radius:6px;
+    padding:10px 0px 10px 0px;
+}
+
+tfoot tr{
+    background-color:#FFCC00;
+}
+
+#groupData {
+    width:1198px;
+    margin:0px auto;
+}
+
+/*FORM STYLES*/
+
+.label{
+    color:#FF0000;
+    font-weight:900;
+}
+
+form{
+    background-color:#F1F1F1;
+    width:25%;
+    border-color:#FFCC00;
+}
+
+#form1{
+    margin-bottom:40px;
+}
+
+input, textarea{
+    border-radius:10px;
+    border:2px solid #C3C3A2;
+    /*box-shadow:3px 4px 5px #C3C3A2 inset;*/
+    color:#000000;
+    /*font-weight:900;*/
+    display:block;
+}
+
+textarea{
+    height:200px;
+}
+
+
+formButton{
+    
+}
+
+formButton:hover{
+    text-decoration:none;
+    background-color:#FF0000;
+    /*border-color:#FFCC00;*/
+    border-radius:20px 20px;
+    border:4px solid;
+    padding:10px 26px;
+}
+
+fieldset{
+    background-color:#FFFFFF;
+}
+
+/*EXTRA STYLES*/
+
+.fa{
+    background-color:rgb(141,198,63);
+    border:none;
+    font-size:2em; /*!important;*/
+    margin:15px;
+    color:#FFF;
+    height:28px;
+    width:28px;
+    padding:10px;
+    text-align:center;
+}
+
+.fa:hover {
+    background-color:#FF7900;
+}
+
+.fa-facebook{
+    background-color:#0C516E;
+}
+
+.fa-twitter{
+    background-color:#8CA6D9;
+}
+
+.fa-intagram{
+    background-color:#125688;
+}
