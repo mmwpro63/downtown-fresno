@@ -1,0 +1,83 @@
+*{
+    box-sizing:border-box;
+}
+
+.mobile {
+    max-width:1000px;
+    margin:0px auto;
+    padding:0px 20px;
+    position:relative;
+}
+
+[type="checkbox"], label {
+    display:none;
+}
+
+/*TARGETING TABLET DEVICES 1024PX OR SMALLER*/
+
+@media screen and (max-width:1000px) {
+    nav ul {
+        display:none;
+    }
+    label{
+        display:block;
+        background-color:#cc0000;
+        width:40px;
+        height:50px;
+        cursor:pointer;
+        position:absolute;
+        right:20px;
+        top:0px;
+        border-radius:4px 4px 0px 0px ;
+        
+        color:#FFCC00;
+        font-size:0.7em;
+        text-align:center;
+        font-weight:700;
+    }
+    
+    label:after{
+        content:'';
+        display:block;
+        width:30px;
+        height:4px;
+        background-color:#FFCC00;
+        margin:7px 5px;
+        box-shadow:0px 10px 0px #FFF, 0px 20px 0px #FFF; 
+    }
+    
+    [type="checkbox"]:checked ~ ul {
+        display:block;
+        z-index:9999;
+        position:absolute;
+        right:20px;
+        left:20px;
+    }
+    
+    nav a{
+        color:#FFFFFF;
+    }
+    
+    nav ul li{
+        display:block;
+        float:right;
+        width:100%;
+        text-align:left;
+        background:#000000;
+        text-indent:15px;
+    }
+    
+    nav > ul > li {
+        
+    }
+    
+    #mobileMenu{
+        width:400px;
+        height:300px;
+        z-index:9999;
+        position:relative;
+        float:left;
+    }
+    #bannerHome{
+        
+}

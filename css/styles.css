@@ -7,19 +7,25 @@ GLOBAL STYLES FOR NON-MOBILE SITE
 */
 /** {color:#FF7900;}BE CAREFUL USING THIS GLOBAL SELECTOR. IT'S DANGEROUS!*/
 
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Playfair+Display|Inconsolata|Rokkitt|Abril+Fatface|Vollkorn);
 
-html,body {
+
+html, body {
     height:100%;
+    width:100%;
 }
 
 body{
     margin:0px;
     padding:0px;
     background-color:#FFFFFF;
-    font-family:'Lucida Sans', Verdana, sans-serif;
+    /*font-family:'Lucida Sans', Verdana, serif;*/
+    /*font-family: 'Poiret One', cursive;*/
+    font-family: 'Playfair Display', serif;
+    /*font-family: 'Rokkitt', serif;*/
     font-size:16px;
     font-weight:500;
-    color:#000000;
+    color:#000000;   
 }
 
 h1, h2, h3{
@@ -34,7 +40,8 @@ h1{
 
 p{
     margin:15px 0px;
-    line-height:15px;
+    /*font-family: 'Inconsolata', ;*/
+    /*font-weight:700;*/
 }
 
 b, strong{
@@ -63,7 +70,7 @@ header{
 
 #header{
     padding:15px 0px;
-    position:relative
+    position:relative;
 }
 
 #logo {
@@ -122,7 +129,7 @@ header{
 #bannerAbout{
     border-top:3px solid #FFCC00;
     padding:90px 0px;
-    background:url(../images/banner-about.jpg) no-repeat center center #CC0000;
+    background:url(../images/banner-about.jpg) no-repeat top center #CC0000;
     background-size:cover;
     overflow:hidden;
 }
@@ -147,11 +154,12 @@ header{
 
 .mainWidth{
     width:1200px;
-    margin:0px auto /*THIS IS HOW YOU CENTER ITEMS IN CSS*/
+    margin:0px auto;/*THIS IS HOW YOU CENTER ITEMS IN CSS*/
+    overflow:hidden;
 }
 
 #main {
-    padding-bottom:;
+    padding-bottom:25px;
 }
 
 /*COLUMN STYLES*/
@@ -198,30 +206,6 @@ header{
     text-align:justify;
     padding:0px;
 }
-
-@media screen and (max-width:1024px) {
-    .mainwidth{
-        width:100%;
-        margin:0px auto;
-        padding:5px;
-    }
-    
-    .columnA, .columnB, .columnC{
-        width:100%;
-        margin:1% auto;
-        float:none;
-        padding-bottom:50px;
-    }
-    
-    .columnA h2, .columnB h2, .columnC h2{
-        font-size:6em;
-        font-weight:900;
-    }
-    
-    .likeimage span {
-        font-size:3em;
-    }
-} 
 
 /*BUTTON STYLES*/
 .columnButton, button{
@@ -309,7 +293,6 @@ footer p{
 }
 
 .copyright p{
-    margin:center;
     text-align:center;
     font-size:1em;
 }
@@ -457,3 +440,74 @@ fieldset{
 .fa-intagram{
     background-color:#125688;
 }
+
+/*===========================AND FINALLY MEDIA QUERIES=========================== */
+
+@media screen and (max-width:1024px) {
+    
+    /*COLUMN SECTION STYLES*/
+    .mainwidth{
+        width:90%;
+        padding:5px;
+    }
+    
+    .columnA, .columnB, .columnC{
+        width:100%;
+        margin:1% auto;
+        float:none;
+        padding-bottom:50px;
+    }
+    
+    .columnA h2, .columnB h2, .columnC h2{
+        font-size:4em;
+        font-weight:900;
+    }
+    
+    .columnA p, .columnB p, .columnC p{
+        font-size:2em;
+        font-weight:300;
+    }
+    
+    .likeimage span {
+        font-size:3em;
+    }
+    
+    /*ABOUT SECTION STYLES*/
+    
+    .alignLeft{
+        float:none;
+        display:block;
+        width:auto;
+    }
+
+    .alignRight{
+        width:auto;
+        padding:30px;
+        margin:0 auto;
+        font-size:3em;
+    }
+    
+    .alignRight h2{
+        font-size:3em;
+        text-align:center;
+    }
+
+    
+    
+    
+    blockquote{
+        display:none;
+    }
+    
+    #aboutImage{
+        width:384px;
+    }
+    
+    /*FOOTER SECTION*/
+    
+    
+    
+    
+} 
+
+
