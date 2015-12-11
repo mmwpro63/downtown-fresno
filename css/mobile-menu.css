@@ -16,6 +16,7 @@
 /*TARGETING TABLET DEVICES 1024PX OR SMALLER*/
 
 @media screen and (max-width:1000px) {
+    /*MOBILE NAVIGATION STYLES*/
     nav ul {
         display:none;
     }
@@ -78,6 +79,41 @@
         position:relative;
         float:left;
     }
-    #bannerHome{
+    
+    .mainwidth{
+        width:90%;
+    }
+    /*MOBILE COLUMN STYLES*/
+    
+    .columnA, .columnB, .columnC{
+        width:100%;
+        margin:1% auto;
+        float:none;
+        padding-bottom:50px;
+    }
+    
+    .columnA h2, .columnB h2, .columnC h2{
+        font-size:4em;
+        font-weight:900;
+    }
+    
+    .columnA p, .columnB p, .columnC p{
+        font-size:2em;
+        font-weight:300;
+    }
         
+    .horizontalImg{
+         width:100%;
+    }   
+     
+    .mobileAside{
+         width:100%;
+         display:block;
+    }
+     
+    .mobileAbout{
+         width:100%;
+         display:block;
+         margin:25px 0px;
+    }
 }
