@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Matthew Woodward || Gallery</title>
+        
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="css/mobile-menu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        
+        <meta charset="UTF-8"/>
+        
+        <meta name="description" content="A gallery containing the images I used on this website."/>
+        
+        <meta name="keywords" content=" M.M.W, matthew m. woodward, first website, web application development, web application developer, coding, Fresno California, Downtown Fresno, "/>
+        
+        <meta name="author" content="Matthew M. Woodward"/>
+        
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+    </head>
+    <body>
+        <header>
+            <div class="mainWidth" id="header">
+                <figure>
+                    <!--<a href="index.html" id="logo"><img src="images/logo.svg" alt="MMW Logo"/></a>-->
+                    <h1><a href="index.html">|M.M.W|</a></h1>
+                </figure>
+                <nav id="menu" class=mobile>
+                    <!--<a></a>-->
+                    <input type="checkbox" id="nav"/><label for="nav">MENU</label>
+                    <ul id="mobileMenu">
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li class="currentPage"><a href="gallery.html" title="Gallery">Gallery</a></li>
+                        <li><a href="about.html" title="About">About</a></li>
+                        <li><a href="art.html" title="Art Interaction">Art Interaction</a></li>
+                        <li><a href="sources.html" title="Cited Sources">Cited Sources</a></li>
+                        <li><a href="contact.html" title="Contact Me">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="bannerGallery">
+            <h1 class="bannerTitle">Gallery</h1>
+        </div>
+        <main class="mainWidth">
+            <!--PHOTO GALLERY STARTS HERE-->
+            <figure class="galleryImages">
+                <a href="#" title="" onclick="return popitup('images/gallery-large/fulton-mall-600x400.jpg')" ><img src="images/gallery-thumbnails/fulton-mall-thumbnail-290x193.jpg" alt="The sadly neglected Fulton Mall" title="The sadly neglected Fulton Mall"/></a>
+                <figcaption class="fignewton">The sadly neglected Fulton Mall</figcaption>
+            </figure>
+            <figure class="galleryImages">
+                <a href="#" title="" onclick="return popitup('images/gallery-large/sculpture-600x400.jpg')"><img src="images/gallery-thumbnails/sculpture-thumbnail-290x193.jpg" alt="A sculpture on the Fulton Mall" title="A sculpture on the Fulton Mall" onclick="return popitup('images/gallery-large/sculpture-600x400.jpg')" /></a>
+                <figcaption class="fignewton">A sculpture on the Fulton Mall.</figcaption>
+            </figure>
+            <figure class="galleryImages">
+                <a href="#" title="" onclick="return popitup('images/gallery-large/plaque-600x400.jpg')"><img src="images/gallery-thumbnails/plaque-thumbnail-290x193.jpg" alt="A small plaque, this could be better." title="A small plaque, this could be better." /></a>
+                <figcaption class="fignewton">A small plaque on the ground, I almost didn't notice it.</figcaption>
+            </figure>
+            <figure class="galleryImages">
+                <a href="#" title="" onclick="return popitup('images/gallery-large/street-corner-600x400.jpg')"><img src="images/gallery-thumbnails/street-corner-thumbnail-290x193.jpg" alt="An empty business at the corner of Fulton and Tulare." title="An empty business at the corner of Fulton and Tulare." /></a>
+                <figcaption class="fignewton">An apparently empty business at the corner of Fulton and Tulare.</figcaption>
+            </figure>
+            <figure class="galleryImages">
+                <a href="#" title="" onclick="return popitup('images/gallery-large/china-express-600x400.jpg')"><img src="images/gallery-thumbnails/china-express-thumbnail-290x193.jpg" alt="A sculpture on the Fulton Mall" title="A sculpture on the Fulton Mall" /></a>
+                <figcaption class="fignewton">Lorem ipsum dolor sit amet.</figcaption>
+            </figure>
+            <figure class="galleryImages">
+                <a href="#" title="" onclick="return popitup('images/gallery-large/el-bronco-600x400.jpg')"><img src="images/gallery-thumbnails/el-bronco-thumbnail-290x193.jpg" alt="A sculpture on the Fulton Mall" title="A sculpture on the Fulton Mall" /></a>
+                <figcaption class="fignewton">Lorem ipsum dolor sit amet.</figcaption>
+            </figure>
+            <!--PHOTO GALLERY ENDS HERE--> 
+        </main>
+        <footer class="copyright">
+            <div class="social">
+                <a href="https://www.facebook.com/matthew.woodward.338" target="_blank" title="facebook icon"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/mmwpro63" target="_blank" title="twitter icon"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com/mmwpro63/" target="_blank" title="instagram icon"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/matthewmichaelwoodward
+" target="_blank" title="linkedin icon"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2015 Matthew Michael Woodward. All rights reserved.| Site by: <a href="https://www.linkedin.com/in/matthewmichaelwoodward" title="linkedin page" target="_blank">Matthew M. Woodward</a></p>
+        </footer>
+        <script language="javascript" type="text/javascript">
+            <!--
+                function popitup(url) {
+	newwindow=window.open(url,'name','width=600,height=400');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+            // -->
+        </script>
+    </body>
+</html>

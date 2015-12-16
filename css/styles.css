@@ -126,10 +126,26 @@ header{
     overflow:hidden;
 }
 
+#bannerGallery{
+     border-top:3px solid #FFCC00;
+    padding:90px 0px;
+    background:url(../images/banner-contact.jpg) no-repeat center center #CC0000;
+    background-size:cover;
+    overflow:hidden;
+}
+
 #bannerAbout{
     border-top:3px solid #FFCC00;
     padding:90px 0px;
     background:url(../images/banner-about.jpg) no-repeat top center #CC0000;
+    background-size:cover;
+    overflow:hidden;
+}
+
+#bannerArt{
+     border-top:3px solid #FFCC00;
+    padding:90px 0px;
+    background:url(../images/banner-contact.jpg) no-repeat center center #CC0000;
     background-size:cover;
     overflow:hidden;
 }
@@ -141,6 +157,7 @@ header{
     background-size:cover;
     overflow:hidden;
 }
+
 
 .bannerTitle{
     text-align:center;
@@ -384,6 +401,20 @@ formButton:hover{
 
 fieldset{
     background-color:#FFFFFF;
+}
+/*PHOTO GALLERY STYLES*/
+
+.galleryImages{
+    background-color:#d6d6d6;
+    padding:4px;
+    width:300px;
+    float:left;
+    margin:0px;
+    text-align:center;
+}
+
+.fignewton{
+    
 }
 
 /*EXTRA STYLES*/
